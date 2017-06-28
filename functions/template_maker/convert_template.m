@@ -97,7 +97,7 @@ fclose(fid);
 p1 = [...
     1 10  0 1  10;...5;... %epiglottis: 10 for normal subject
     1 1   1 1  20;...3;... %tongue: 20 for normal subject
-    1 1   0 1  10;...3;... %jaw bone
+    1 1   0 1  5;...3;... %jaw bone
     1 1   0 1  10;...3;... %lower lip; changed for experiment 02/2009 used to be  1 1 0 0 2 %% 1 1  0 0  2;
     1 1   0 1  15;...10;... %chin
     1 1   0 0  10;...10;... %neck front %was 20, EB 02/05/08
@@ -112,9 +112,9 @@ v1 = v1/frameWidth;% - .5;
 v1(:,2) =  v1(:,2);% + 1; 
 
 p2 = [...
-      0 0 0 1   30;...5;... %pharyngeal wall %was 10, EB 02/05/08
-      0 0 0 1   20;...10;... %border w/ brain
-      0 0 0 0   10;...20;... %neck back %%50
+      1 0 1 1   20;...5;... %pharyngeal wall %was 10, EB 02/05/08
+      0 0 0 1   15;...10;... %border w/ brain
+      0 0 0 0   20;...20;... %neck back %%50
       0 0 0 0   5;...20;... %border w/ lungs
     ];
 v2=[];
